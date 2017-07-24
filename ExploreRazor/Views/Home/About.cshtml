@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+@* This is Code Block *@
+@{
+    var num1 = 48;
+    var num2 = 928;
+    var result = num1 + num2;
+}
+@* Inline Markup *@
+<h2>Sum of @num1 + @num2 = @result</h2>
+
+
+
+
+
+
+
+
+
+
+@*Qu 1: Write a program to convert following datatypes:
+
+   1.String “32” into int*@
+@{
+    var number = "32.1872";
+    float num;
+    @* //This line will raise error because you cannot store string into int variable *@
+    @* //num = number; *@
+@*if (number.IsInt() == true)
+{
+    num = number.AsInt();
+    <h5>@num  is Integer Value</h5>
+}
+else
+{
+    <h5>@number  is Not Integer</h5>
+}*@
+
+
+   @*2.Float “12.52” into float*@
+
+@*if (number.IsFloat() == true)
+{
+    num = number.AsFloat();
+<h5>@num2 is a Float</h5>
+}
+else
+{
+<h5>@number  is Not A Float</h5>
+    }*@
+
+
+   @*3.Decimal “123.345” into decimal.*@
+@*if (number.IsDecimal() == true)
+{
+    num = number.AsFloat();
+    <h5>@num2 is a Decimal</h5>
+}
+else
+{
+    <h5>@number  is Not A Float</h5>
+}*@
+
+
+
+}
+@*You must check type of value before converting.*@
+
+@*Qu 2: Write a program to find all the even number between 12 and 42 using looping and conditional statements.*@
+int startNum = 12
+int endNum = 42
+int[]
+for each num i in array.Length-1
+
+@*Qu 3: Write a program to display array on the screen. Array value should be like this.*@
+@*2,6,2,55,62,64,67*@
+@*Qu 4: Write a function for calculator with exception handling that returns division of two numbers.*@
+
+
+@*<p>Use this area to provide additional information.</p>*@
